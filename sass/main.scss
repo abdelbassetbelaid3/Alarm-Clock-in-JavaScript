@@ -1,0 +1,52 @@
+@import 'config';
+body{
+    background-color: $background;
+    
+}
+.clock{
+    background-color: $surface;
+    width: 50%;
+    color: $border;
+    text-align: center;
+    margin-inline: auto;
+    margin-block: 5%;
+    padding-block: 2%;
+    border-radius: 20px;
+    &__img{
+        max-width: 200px;
+    }
+    &__time{
+        margin-block: 10px;
+    }
+    &__set{
+        display: inline-block;
+        width: 20%;
+        margin-inline: auto;
+        margin-block: 15px;
+        border: 3px solid $button;
+        color: $border;
+        border-radius: 2px;
+    }
+    &__set::-webkit-inner-spin-button{
+        color: $button;
+    }
+    select{
+        border: none;
+        border-radius: 2px;
+        background-color: $button;
+        color: $border;
+        height: 20px;
+    }
+    &__button{
+        display: block;
+        background-color: $button;
+        color: $surface;
+        border: none;
+        width: 50%;
+        border-radius: 5px;
+        padding-inline: 15px;
+        padding-block: 10px;
+        margin-inline: auto;
+        margin-block: 15px;
+    }
+}
